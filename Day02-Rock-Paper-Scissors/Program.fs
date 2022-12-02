@@ -13,7 +13,7 @@ let calculateLineScore (line: char * char) : int=
         |'C', C -> match C with | 'X' ->  1 + win | 'Y' -> 2 |'Z' -> 3 + draw
     
     
-let calculateGameResult (line: char * char) : char * char=
+let transformGameResult (line: char * char) : char * char=
     match line with
         |'A', A -> match A with | 'X' ->  ('A', 'Z') | 'Y' -> ('A', 'X') |'Z' -> ('A','Y')
         |'B', B -> match B with | 'X' ->  ('B', 'X') | 'Y' -> ('B', 'Y') |'Z' -> ('B','Z')
@@ -28,7 +28,7 @@ let part1 = tuples
             |> Seq.sum
 
 let part2 = tuples
-            |> Seq.map calculateGameResult
+            |> Seq.map transformGameResult
             |> Seq.map calculateLineScore
             |> Seq.sum
             
