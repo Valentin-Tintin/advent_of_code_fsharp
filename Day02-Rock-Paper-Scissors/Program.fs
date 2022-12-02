@@ -28,8 +28,7 @@ let part1 = tuples
             |> Seq.sum
 
 let part2 = tuples
-            |> Seq.map transformGameResult
-            |> Seq.map calculateLineScore
+            |> Seq.map(fun tpl -> calculateLineScore(transformGameResult tpl))   
             |> Seq.sum
             
 printf $"Part1: {part1}\n"
