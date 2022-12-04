@@ -4,6 +4,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day01-Calorie-Counting", "D
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day02-Rock-Paper-Scissors", "Day02-Rock-Paper-Scissors\Day02-Rock-Paper-Scissors.fsproj", "{B7C59F69-7466-44DE-9F34-0334CED43187}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day03-Rucksack-Reorganization", "Day03-Rucksack-Reorganization\Day03-Rucksack-Reorganization.fsproj", "{3DB8C3B0-3F8B-4C71-9499-5EF86C46708C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day04-Camp-Cleanup", "Day04-Camp-Cleanup\Day04-Camp-Cleanup.fsproj", "{246D7583-C272-4B1A-88D7-8526886D4A9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{B7C59F69-7466-44DE-9F34-0334CED43187}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7C59F69-7466-44DE-9F34-0334CED43187}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7C59F69-7466-44DE-9F34-0334CED43187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB8C3B0-3F8B-4C71-9499-5EF86C46708C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB8C3B0-3F8B-4C71-9499-5EF86C46708C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB8C3B0-3F8B-4C71-9499-5EF86C46708C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB8C3B0-3F8B-4C71-9499-5EF86C46708C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246D7583-C272-4B1A-88D7-8526886D4A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246D7583-C272-4B1A-88D7-8526886D4A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246D7583-C272-4B1A-88D7-8526886D4A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246D7583-C272-4B1A-88D7-8526886D4A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
