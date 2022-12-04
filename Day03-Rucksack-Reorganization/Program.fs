@@ -1,6 +1,11 @@
 ﻿open System.IO
 let input = File.ReadAllLines("input.txt")
 
+let PriorityMap = seq { 1..26 }
+                |> Seq.zip (seq { 'a' .. 'z' })
+                |> Seq.append (seq { 27..52 } |> Seq.zip (seq { 'A' .. 'Z' }))
+                |> Map.ofSeq
+
 let splitLineInHalf (line: string) : string * string =
     (line[.. line.Length / 2 - 1], line[line.Length / 2 ..])
 
@@ -26,18 +31,7 @@ let findDuplicate (line: string * string) : char =
 
 
 let getPriorityValue (value: char) =
-    let charSeq = seq { 'a' .. 'z' }
-    let intSeq = seq { 1..26 }
-    let charSeqUpper = seq { 'A' .. 'Z' }
-    let intSeqUpper = seq { 27..52 }
-
-    let prioMap =
-        intSeq
-        |> Seq.zip charSeq
-        |> Seq.append (intSeqUpper |> Seq.zip charSeqUpper)
-        |> Map.ofSeq
-
-    prioMap[value]
+    PriorityMap[value]
 
 let findCommonChar (chars: string[]): char =
     let set =  chars |> Seq.map Seq.toList |> Seq.map Set.ofList |> Set.intersectMany
